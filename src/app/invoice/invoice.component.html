@@ -1,0 +1,46 @@
+<br/><form>
+    <fieldset>
+        
+      
+     
+            <legend><h1>Add invoice</h1></legend>
+            
+               
+            
+          <div>
+              Date: <input class="form-control" type="date" [(ngModel)]="date" name="date" required/>
+            </div>
+                          
+
+          <div>
+            Bruto amount: <input class="form-control" type="text" [(ngModel)]="brutoAmount" name="bruto" required/>
+           </div>
+           
+           
+           <div>
+            Netto amount: <input class="form-control" type="text" [(ngModel)]="nettoAmount" name="netto" required/>
+          </div>
+
+          <div>
+              BTW: <input class="form-control" type="number" [(ngModel)]="btw" name="btw" required/>
+            </div>
+
+
+          <div>
+           Client: <input class="form-control" type="text" [(ngModel)]="clientName" name="clientName" required/>
+          </div>                        
+
+    
+                       
+          <button class="btn btn-primary pull-right" (click)="onSubmit()" type="submit">Submit</button>
+                         
+                     
+     
+    
+    </fieldset>
+    </form>
+    <br/>
+
+
+
+
